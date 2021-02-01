@@ -1,4 +1,4 @@
-name: Jenkinsdeploy
+name: JenkinsDeploy
 version: ${project.version}
 main: net.craftions.jenkinsdeploy.Jenkinsdeploy
 api-version: 1.15
