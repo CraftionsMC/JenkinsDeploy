@@ -1,0 +1,4 @@
+plugins:
+  SkyWars:
+    downloadURL: "https://ci.craftions.net/job/SkyWars/lastSuccessfulBuild/artifact/target/SkyWars-1.0-SNAPSHOT.jar"
+    localFileName: "SkyWars.jar"
