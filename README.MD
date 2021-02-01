@@ -11,7 +11,7 @@ depends:
 ```yaml
 plugins:
   Name_of_the_plugin:
-    downloadURL: "http://your-jenkins.com/job/your-job"
+    downloadURL: "http://your-jenkins.com/job/your-job/lastSuccessfulBuild/artifact/your-artifact.jar"
     localFileName: "yourPlugin.jar"
 ```
 On every start/reload of the server all plugins in the "plugins" section is being updated.
