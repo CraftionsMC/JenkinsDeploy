@@ -1,5 +1,8 @@
 package net.craftions.jenkinsdeploy;
 
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.InvalidDescriptionException;
+import org.bukkit.plugin.InvalidPluginException;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -29,6 +32,13 @@ public final class Jenkinsdeploy extends JavaPlugin {
                 System.out.println("[JenkinsDeploy] Downloading new file " + localFileName + "...");
                 Download.download(downloadURL, localFile);
                 System.out.println("[JenkinsDeploy] Finished downloading file!");
+                try {
+                    Bukkit.getPluginManager().loadPlugin(localFile);
+                } catch (InvalidPluginException e) {
+                    e.printStackTrace();
+                } catch (InvalidDescriptionException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
