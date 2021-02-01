@@ -19,3 +19,8 @@ On every start/reload of the server all plugins in the "plugins" section is bein
 # Copyright
 
 Copyright (c) 2020-2021 Craftions.net, Ben Siebert. This Content is licensed under the MIT License.
+
+# External Links
+
+Plugin Homepage: https://craftions.net/?page_id=249
+SpigotMC Page: https://www.spigotmc.org/resources/jenkinsdeploy.88550/
