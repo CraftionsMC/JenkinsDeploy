@@ -16,6 +16,7 @@ public final class Jenkinsdeploy extends JavaPlugin {
         if(!config.exists()){
             Download.download("https://cdn.craftions.net/plugins/JenkinsDeploy/default/config.clean.yml", config);
         }
+        Config.init();
         for(String s : Config.conf.getConfigurationSection("plugins").getKeys(false)){
             Boolean ignore = Config.conf.getBoolean("plugins." + s + ".ignore");
             if(!ignore){
