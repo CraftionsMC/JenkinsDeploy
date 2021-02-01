@@ -1,0 +1,7 @@
+name: Jenkinsdeploy
+version: ${project.version}
+main: net.craftions.jenkinsdeploy.Jenkinsdeploy
+api-version: 1.15
+authors: [ MCTzOCK ]
+description: Reload Plugins from Jenkins on every startup
+load: STARTUP
