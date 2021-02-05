@@ -24,6 +24,9 @@ public final class Jenkinsdeploy extends JavaPlugin {
             Boolean ignore = Config.conf.getBoolean("plugins." + s + ".ignore");
             if(!ignore){
                 System.out.println("[JenkinsDeploy] Found plugin " + s);
+                if(Bukkit.getPluginManager().isPluginEnabled(s)){
+                    Bukkit.getPluginManager().disablePlugin(Bukkit.getPluginManager().getPlugin(s));
+                }
                 String localFileName = Config.conf.getString("plugins." + s + ".localFileName");
                 String downloadURL = Config.conf.getString("plugins." + s + ".downloadURL");
                 System.out.println("[JenkinsDeploy] Deleting original file " + localFileName);
