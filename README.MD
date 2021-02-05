@@ -4,8 +4,7 @@ Download the latest plugin version of any plugin at startup.
 # How To Use
 - Add this to your plugin.yml:
 ```yaml
-depends: 
-  - JenkinsDeploy
+depend: [JenkinsDeploy]
 ```
 - Then add this to the config (plugins/JenkinsDeploy/config.yml):
 ```yaml
